@@ -14,9 +14,12 @@
             font-family: 'Inter', sans-serif;
             background-color: #f8f8f8; /* Light gray background */
         }
-        /* Custom styles for skill table */
-        .skill-table td {
-            padding: 0.5rem 0.75rem; /* Padding for table cells */
+        /* Custom styles for skill categories and items */
+        .skill-category {
+            @apply mb-4; /* Margin bottom for each skill category */
+        }
+        .skill-list {
+            @apply list-disc list-inside space-y-1 text-gray-700; /* Styles for individual skill lists */
         }
     </style>
 </head>
@@ -31,9 +34,9 @@
                     <p class="text-sm md:text-base mt-2">Nizamabad, Telangana, India</p>
                 </div>
                 <div class="mt-4 md:mt-0 text-sm md:text-base flex flex-col items-center md:items-end">
-                    <a href="tel:7013730869" class="text-white hover:underline mb-1">7013730869</a>
+                    <a href="tel:7013730869" class="text-white hover:underline mb-1">E 7013730869</a>
                     <a href="mailto:dlalith.2003@gmail.com" class="text-white hover:underline mb-1">dlalith.2003@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/lalith-kumar-devineni" target="_blank" rel="noopener noreferrer" class="text-white hover:underline">
+                    <a href="https://www.linkedin.com/in/lalith-kumar-devineni/" target="_blank" rel="noopener noreferrer" class="text-white hover:underline">
                         LinkedIn Profile
                     </a>
                 </div>
@@ -52,16 +55,15 @@
 
                 <!-- Experience Section -->
                 <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">EXPERIENCE</h2>
+                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">WORK EXPERIENCE</h2>
 
                     <div class="mb-6 border-b border-gray-200 pb-4 last:border-b-0">
-                        <h3 class="text-xl font-semibold text-gray-900">Founder & CEO</h3>
-                        <p class="text-blue-600 font-medium">DLK Services Private Limited</p>
-                        <p class="text-sm text-gray-500">12/2021 – Present | Bodhan, Telangana, India</p>
+                        <h3 class="text-xl font-semibold text-gray-900">Founder & CEO, DLK Services Private Limited</h3>
+                        <p class="text-blue-600 font-medium">An EdTech startup focused on making quality education accessible</p>
+                        <p class="text-sm text-gray-500">Dec 2021 – Present | Bodhan, Telangana, India</p>
                         <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                            <li>An EdTech startup focused on making quality education accessible.</li>
-                            <li>Established and scaled an EdTech startup serving 50 schools across Telangana and beyond.</li>
-                            <li>Designed and implemented digital learning systems for Grades 6, improving student performance by 20%.</li>
+                            <li>Established and scaled an EdTech startup serving 50+ schools across Telangana and beyond.</li>
+                            <li>Designed and implemented digital learning systems for Grades 6-12, improving student performance by 20%.</li>
                             <li>Led client engagement efforts, securing contracts with public and private institutions.</li>
                             <li>Managed cross-functional teams in technology, content, and instruction.</li>
                             <li>Oversaw strategic planning, budgeting, and operational governance.</li>
@@ -69,9 +71,9 @@
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Independent International Business Consultant</h3>
-                        <p class="text-blue-600 font-medium">X Culture</p>
-                        <p class="text-sm text-gray-500">08/2024 – 12/2024 | International business consulting project</p>
+                        <h3 class="text-xl font-semibold text-gray-900">Independent International Business Consultant, X-Culture</h3>
+                        <p class="text-blue-600 font-medium">International business consulting project</p>
+                        <p class="text-sm text-gray-500">Aug 2024 – Dec 2024</p>
                         <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
                             <li>Competition analysis.</li>
                             <li>Analysis of the international target market and trade regulations.</li>
@@ -94,13 +96,17 @@
                     <div class="mb-4">
                         <h3 class="text-xl font-semibold text-gray-900">Master of Business Administration - MBA</h3>
                         <p class="text-blue-600 font-medium">Manav Rachna International Institute of Research & Studies</p>
-                        <p class="text-sm text-gray-500">01/2024 – 01/2026 (Expected) | India</p>
+                        <p class="text-sm text-gray-500">Jan 2024 – Dec 2025 (Expected) | India</p>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li>Specialization in International Business.</li>
+                            <li>Research paper on "Smart Learning in Semi-Urban India - A Case Study on the Implementation and Impact of Technology-Driven Academic Models".</li>
+                        </ul>
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">BCA</h3>
-                        <p class="text-blue-600 font-medium">Amity University, Greater Noida Campus</p>
-                        <p class="text-sm text-gray-500">12/2020 – 12/2023 | India</p>
+                        <h3 class="text-xl font-semibold text-gray-900">Bachelor of Computer Applications</h3>
+                        <p class="text-blue-600 font-medium">Amity University</p>
+                        <p class="text-sm text-gray-500">Jan 2021 – Dec 2023 | India</p>
                     </div>
                 </section>
             </div>
@@ -144,47 +150,7 @@
                 <!-- Skills Section -->
                 <section class="bg-white p-6 rounded-lg shadow-md">
                     <h2 class="text-2xl font-semibold text-blue-700 mb-4">SKILLS</h2>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-left table-auto skill-table">
-                            <tbody>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">Communication</td>
-                                    <td>Finance</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">Organisational</td>
-                                    <td>Leadership</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">Strategic Thinking</td>
-                                    <td>Multi-tasking</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">Onboarding</td>
-                                    <td>Risk Management</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">PowerBI</td>
-                                    <td>Tableau</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">SQL</td>
-                                    <td>Google Analytics</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">Excel</td>
-                                    <td>AI and Automation</td>
-                                </tr>
-                                <tr class="border-b border-gray-200">
-                                    <td class="font-medium">ERP</td>
-                                    <td>Google Ads</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            </div>
-        </main>
-    </div>
-</body>
-</html>
+                    <div class="space-y-4">
+                        <!-- Leadership & Management -->
+                        <div class="skill-category">
+                           
