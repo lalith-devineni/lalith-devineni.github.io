@@ -12,11 +12,12 @@
         /* Apply Inter font to the entire body */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8f8f8; /* Light gray background */
+            background-color: #f0f2f5; /* Softer light gray background */
+            line-height: 1.6; /* Improve readability */
         }
         /* Custom styles for skill categories and items */
-        .skill-category {
-            @apply mb-4; /* Margin bottom for each skill category */
+        .skill-category h3 {
+            @apply font-bold text-lg mb-2 border-b-2 border-blue-200 pb-2; /* Stronger heading for skill categories */
         }
         .skill-list {
             @apply list-disc list-inside space-y-1 text-gray-700; /* Styles for individual skill lists */
@@ -26,17 +27,17 @@
 <body class="antialiased text-gray-800">
     <div class="container mx-auto p-4 md:p-8 lg:p-12">
         <!-- Header Section -->
-        <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 md:p-8 rounded-lg shadow-xl mb-8">
+        <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-8 px-6 md:py-12 md:px-8 rounded-xl shadow-2xl mb-10 transition-all duration-300 ease-in-out transform hover:scale-[1.01]">
             <div class="flex flex-col md:flex-row items-center justify-between">
-                <div>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">LALITH KUMAR DEVINENI</h1>
-                    <p class="text-xl md:text-2xl font-medium">Founder & CEO</p>
-                    <p class="text-sm md:text-base mt-2">Nizamabad, Telangana, India</p>
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-2 leading-tight">LALITH KUMAR DEVINENI</h1>
+                    <p class="text-2xl md:text-3xl font-semibold">Founder & CEO</p>
+                    <p class="text-base md:text-lg mt-3 opacity-90">Nizamabad, Telangana, India</p>
                 </div>
-                <div class="mt-4 md:mt-0 text-sm md:text-base flex flex-col items-center md:items-end">
-                    <a href="tel:7013730869" class="text-white hover:underline mb-1">E 7013730869</a>
-                    <a href="mailto:dlalith.2003@gmail.com" class="text-white hover:underline mb-1">dlalith.2003@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/lalith-kumar-devineni/" target="_blank" rel="noopener noreferrer" class="text-white hover:underline">
+                <div class="text-center md:text-right text-base md:text-lg flex flex-col items-center md:items-end space-y-2">
+                    <a href="tel:7013730869" class="text-white hover:underline transition-colors duration-200 hover:text-blue-200">E 7013730869</a>
+                    <a href="mailto:dlalith.2003@gmail.com" class="text-white hover:underline transition-colors duration-200 hover:text-blue-200">dlalith.2003@gmail.com</a>
+                    <a href="https://www.linkedin.com/in/lalith-kumar-devineni/" target="_blank" rel="noopener noreferrer" class="text-white hover:underline transition-colors duration-200 hover:text-blue-200">
                         LinkedIn Profile
                     </a>
                 </div>
@@ -48,20 +49,20 @@
             <!-- Left Column: Summary, Experience, Education -->
             <div class="lg:col-span-2 space-y-8">
                 <!-- Summary Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">SUMMARY</h2>
-                    <p class="leading-relaxed">As the Founder & CEO of DLK Services Pvt Ltd, I lead a purpose-driven mission: making quality education accessible across semi-urban India. With a blend of entrepreneurial passion and academic insight, I've built DLK from the ground up, partnering with educational institutions to craft smart learning ecosystems.</p>
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">SUMMARY</h2>
+                    <p class="leading-relaxed text-lg">As the Founder & CEO of DLK Services Pvt Ltd, I lead a purpose-driven mission: making quality education accessible across semi-urban India. With a blend of entrepreneurial passion and academic insight, I've built DLK from the ground up, partnering with educational institutions to craft smart learning ecosystems.</p>
                 </section>
 
                 <!-- Experience Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">WORK EXPERIENCE</h2>
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">WORK EXPERIENCE</h2>
 
-                    <div class="mb-6 border-b border-gray-200 pb-4 last:border-b-0">
-                        <h3 class="text-xl font-semibold text-gray-900">Founder & CEO, DLK Services Private Limited</h3>
-                        <p class="text-blue-600 font-medium">An EdTech startup focused on making quality education accessible</p>
-                        <p class="text-sm text-gray-500">Dec 2021 – Present | Bodhan, Telangana, India</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <div class="mb-8 pb-6 border-b border-gray-200 last:border-b-0">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-1">Founder & CEO, DLK Services Private Limited</h3>
+                        <p class="text-blue-600 font-medium text-lg mb-1">An EdTech startup focused on making quality education accessible</p>
+                        <p class="text-md text-gray-500 mb-3">Dec 2021 – Present | Bodhan, Telangana, India</p>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2 text-base">
                             <li>Established and scaled an EdTech startup serving 50+ schools across Telangana and beyond.</li>
                             <li>Designed and implemented digital learning systems for Grades 6-12, improving student performance by 20%.</li>
                             <li>Led client engagement efforts, securing contracts with public and private institutions.</li>
@@ -71,10 +72,10 @@
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Independent International Business Consultant, X-Culture</h3>
-                        <p class="text-blue-600 font-medium">International business consulting project</p>
-                        <p class="text-sm text-gray-500">Aug 2024 – Dec 2024</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-1">Independent International Business Consultant, X-Culture</h3>
+                        <p class="text-blue-600 font-medium text-lg mb-1">International business consulting project</p>
+                        <p class="text-md text-gray-500 mb-3">Aug 2024 – Dec 2024</p>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2 text-base">
                             <li>Competition analysis.</li>
                             <li>Analysis of the international target market and trade regulations.</li>
                             <li>Development of an international market expansion strategy.</li>
@@ -90,23 +91,23 @@
                 </section>
 
                 <!-- Education Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">EDUCATION</h2>
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">EDUCATION</h2>
 
-                    <div class="mb-4">
-                        <h3 class="text-xl font-semibold text-gray-900">Master of Business Administration - MBA</h3>
-                        <p class="text-blue-600 font-medium">Manav Rachna International Institute of Research & Studies</p>
-                        <p class="text-sm text-gray-500">Jan 2024 – Dec 2025 (Expected) | India</p>
-                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                    <div class="mb-6 pb-4 border-b border-gray-200">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-1">Master of Business Administration - MBA</h3>
+                        <p class="text-blue-600 font-medium text-lg mb-1">Manav Rachna International Institute of Research & Studies</p>
+                        <p class="text-md text-gray-500 mb-3">Jan 2024 – Dec 2025 (Expected) | India</p>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-2 text-base">
                             <li>Specialization in International Business.</li>
                             <li>Research paper on "Smart Learning in Semi-Urban India - A Case Study on the Implementation and Impact of Technology-Driven Academic Models".</li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 class="text-xl font-semibold text-gray-900">Bachelor of Computer Applications</h3>
-                        <p class="text-blue-600 font-medium">Amity University</p>
-                        <p class="text-sm text-gray-500">Jan 2021 – Dec 2023 | India</p>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-1">Bachelor of Computer Applications</h3>
+                        <p class="text-blue-600 font-medium text-lg mb-1">Amity University</p>
+                        <p class="text-md text-gray-500 mb-3">Jan 2021 – Dec 2023 | India</p>
                     </div>
                 </section>
             </div>
@@ -114,43 +115,109 @@
             <!-- Right Column: Strengths, Key Achievements, Skills -->
             <div class="lg:col-span-1 space-y-8">
                 <!-- Strengths Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">STRENGTHS</h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">STRENGTHS</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-4">
                         <li>
-                            <p class="font-medium">Startup leadership & strategic scaling</p>
-                            <p class="text-sm ml-4">Leading startups and guiding them through strategic scaling while focusing on measurable impacts.</p>
+                            <p class="font-semibold text-lg">Startup leadership & strategic scaling</p>
+                            <p class="text-base pl-6">Leading startups and guiding them through strategic scaling while focusing on measurable impacts.</p>
                         </li>
                         <li>
-                            <p class="font-medium">EdTech program design & implementation</p>
-                            <p class="text-sm ml-4">Designing and implementing innovative EdTech programs to enhance learning experiences.</p>
+                            <p class="font-semibold text-lg">EdTech program design & implementation</p>
+                            <p class="text-base pl-6">Designing and implementing innovative EdTech programs to enhance learning experiences.</p>
                         </li>
                         <li>
-                            <p class="font-medium">Stakeholder engagement & partnership building</p>
-                            <p class="text-sm ml-4">Engaging various stakeholders to build partnerships that advance educational initiatives.</p>
+                            <p class="font-semibold text-lg">Stakeholder engagement & partnership building</p>
+                            <p class="text-base pl-6">Engaging various stakeholders to build partnerships that advance educational initiatives.</p>
                         </li>
                         <li>
-                            <p class="font-medium">Visionary planning with a measurable impact focus</p>
-                            <p class="text-sm ml-4">Creating visionary plans that focus on impactful educational outcomes.</p>
+                            <p class="font-semibold text-lg">Visionary planning with a measurable impact focus</p>
+                            <p class="text-base pl-6">Creating visionary plans that focus on impactful educational outcomes.</p>
                         </li>
                     </ul>
                 </section>
 
                 <!-- Key Achievements Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">KEY ACHIEVEMENTS</h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">KEY ACHIEVEMENTS</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-4">
                         <li>
-                            <p class="font-medium">Young Entrepreneur of the Year (Education Innovation)</p>
-                            <p class="text-sm ml-4">Received the Young Entrepreneur of the Year award for Education Innovation, recognizing the impact of my work in the EdTech sector.</p>
+                            <p class="font-semibold text-lg">Young Entrepreneur of the Year (Education Innovation)</p>
+                            <p class="text-base pl-6">Received the Young Entrepreneur of the Year award for Education Innovation, recognizing the impact of my work in the EdTech sector.</p>
                         </li>
                     </ul>
                 </section>
 
                 <!-- Skills Section -->
-                <section class="bg-white p-6 rounded-lg shadow-md">
-                    <h2 class="text-2xl font-semibold text-blue-700 mb-4">SKILLS</h2>
-                    <div class="space-y-4">
+                <section class="bg-white p-6 md:p-8 rounded-xl shadow-xl border border-gray-100 transition-all duration-300 ease-in-out hover:shadow-2xl">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-5">SKILLS</h2>
+                    <div class="space-y-6">
                         <!-- Leadership & Management -->
                         <div class="skill-category">
-                           
+                            <h3 class="font-semibold text-gray-800">Leadership & Management</h3>
+                            <ul class="skill-list">
+                                <li>Strategic Planning: Visionary planning, market entry strategy, business development, go-to-market strategy, product strategy, competitive analysis.</li>
+                                <li>Organizational Leadership: Startup scaling, team leadership, cross-functional team management, operational governance, change management, talent development.</li>
+                                <li>Project Management: Project planning, execution, monitoring & control, risk management, stakeholder management, agile methodologies.</li>
+                                <li>Financial Management: Budgeting, financial forecasting, P&L management, fundraising (if applicable).</li>
+                            </ul>
+                        </div>
+
+                        <!-- EdTech & Product Development -->
+                        <div class="skill-category">
+                            <h3 class="font-semibold text-gray-800">EdTech & Product Development</h3>
+                            <ul class="skill-list">
+                                <li>EdTech Program Design: Curriculum development, digital learning system design, educational technology integration, learning experience design (LXD).</li>
+                                <li>Product Management: Product adaptation, product lifecycle management, user experience (UX) principles, feature prioritization.</li>
+                                <li>Instructional Design: Content development, pedagogical approaches, e-learning platforms.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Business Development & Client Relations -->
+                        <div class="skill-category">
+                            <h3 class="font-semibold text-gray-800">Business Development & Client Relations</h3>
+                            <ul class="skill-list">
+                                <li>Client Engagement: Relationship building, contract negotiation, client acquisition, customer success, public relations.</li>
+                                <li>Partnership Building: Strategic alliances, collaboration, B2B sales, key account management.</li>
+                                <li>Market Analysis: International target market analysis, trade regulations, market research, competitive intelligence.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Data Analysis & Technology -->
+                        <div class="skill-category">
+                            <h3 class="font-semibold text-gray-800">Data Analysis & Technology</h3>
+                            <ul class="skill-list">
+                                <li>Data Analysis Tools: Power BI, Tableau, SQL, Google Analytics, Microsoft Excel.</li>
+                                <li>Business Intelligence: Reporting, dashboard creation, data interpretation, performance metrics tracking.</li>
+                                <li>Emerging Technologies: AI & Automation (understanding of their application in business).</li>
+                                <li>Enterprise Systems: ERP (Enterprise Resource Planning) systems.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Marketing & Sales -->
+                        <div class="skill-category">
+                            <h3 class="font-semibold text-gray-800">Marketing & Sales</h3>
+                            <ul class="skill-list">
+                                <li>Digital Marketing: Google Ads, SEO (Search Engine Optimization - if applicable), social media marketing (if applicable), content marketing.</li>
+                                <li>Marketing Strategy: Promotion, brand development, campaign management.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Professional & Soft Skills -->
+                        <div class="skill-category">
+                            <h3 class="font-semibold text-gray-800">Professional & Soft Skills</h3>
+                            <ul class="skill-list">
+                                <li>Communication: Presentation skills, negotiation, written communication, verbal communication, active listening.</li>
+                                <li>Strategic Thinking: Problem-solving, critical thinking, decision-making, analytical skills.</li>
+                                <li>Collaboration: Work in global virtual teams, cross-cultural communication, teamwork.</li>
+                                <li>Adaptability & Resilience: Multi-tasking, startup environment adaptability, continuous learning.</li>
+                                <li>Results-Oriented: Focus on measurable impacts, performance improvement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
